@@ -8,13 +8,13 @@ public class MouseMover extends JFrame implements MouseListener
 {
 	public MouseMover() throws AWTException{
 		new JFrame("MouseMover");
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setPreferredSize(new Dimension(150, 150));
-        this.addMouseListener(this);
-        this.pack();
-        this.setVisible(true);
+        	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        	this.setPreferredSize(new Dimension(150, 150));
+        	this.addMouseListener(this);
+        	this.pack();
+        	this.setVisible(true);
         
-        Robot mousie = new Robot();
+        	Robot mousie = new Robot();
 		Random random = new Random();
 		mousie.mouseMove(50, 50);
 		while(true){
