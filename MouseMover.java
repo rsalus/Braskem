@@ -19,7 +19,7 @@ public class MouseMover extends JFrame implements MouseListener
 		mousie.mouseMove(50, 50);
 		while(true){
 			mousie.delay(1000 * 10);
-			mousie.mouseMove(random.nextInt(120 + 1 - 20) + 20, random.nextInt(120 + 1 - 20) + 30);
+			mousie.mouseMove(random.nextInt(120 + 1 - 20) + 30, random.nextInt(120 + 1 - 20) + 30);
 		}
 	}
 	public static void main(String[] args) throws Exception{
