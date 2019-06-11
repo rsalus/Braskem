@@ -19,7 +19,7 @@ public class MouseMover extends JFrame implements MouseListener
 		while(true){
 			mousie.delay(50);
 			mousie.mouseMove(MouseInfo.getPointerInfo().getLocation().x + modifier, MouseInfo.getPointerInfo().getLocation().y + modifier);
-			modifier = modifier*-1;
+			modifier *= -1;
 		}
 	}
 	public static void main(String[] args) throws AWTException{
