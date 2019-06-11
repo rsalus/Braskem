@@ -16,9 +16,9 @@ public class MouseMover extends JFrame implements MouseListener
         
         	Robot mousie = new Robot();
 		Random random = new Random();
-		mousie.mouseMove(50, 50);
+		mousie.mouseMove(75, 75);
 		while(true){
-			mousie.delay(10000);
+			mousie.delay(1000);
 			mousie.mouseMove(random.nextInt(101) + 30, random.nextInt(101) + 30);
 		}
 	}
