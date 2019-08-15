@@ -77,8 +77,8 @@ public class InviteExporter extends JPanel implements ActionListener{
 			
 			for(int i = 0; i < data.size(); i++){
 				if(data.get(i).contains("js-data-filter ember-view")){
-					String temp = data.get(i).substring(225, data.get(i).length());
-					if(temp.contains((">"))){temp = data.get(i).substring(226, data.get(i).length());}
+					int length = data.get(i).length() - data.get(i).substring(0, data.get(i).indexOf("js-data-filter ember-view\">")).length();
+					String temp = data.get(i).substring(length, data.get(i).length());
 					if(temp.substring(0, 1).equals(" ")){
 						temp = temp.substring(1, temp.length());
 					}
